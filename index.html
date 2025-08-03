@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tripie | Home</title>
+		<link
+			rel="icon"
+			type="image/png"
+			href="favicon/favicon-96x96.png"
+			sizes="96x96"
+		/>
+		<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+		<link rel="shortcut icon" href="favicon/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="favicon/apple-touch-icon.png"
+		/>
+		<link rel="manifest" href="favicon/site.webmanifest" />
+
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header-container">
+				<a href="index.html" class="logo">
+					<img
+						src="img/Logo symbol.svg"
+						alt="Tripie Logo"
+						class="logo__image"
+						width="36px"
+						height="36px"
+					/>
+					<h1 class="logo__name">Tripie</h1>
+				</a>
+				<nav class="header__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="Tours.html" class="nav__link">Tours</a>
+						</li>
+						<li class="nav__item">
+							<a href="Destination.html" class="nav__link">Destination</a>
+						</li>
+						<li class="nav__item">
+							<a href="Virtual-tour.html" class="nav__link">Virtual tour</a>
+						</li>
+						<li class="nav__item">
+							<a href="Blog.html" class="nav__link">Blog</a>
+						</li>
+						<li class="nav__item">
+							<a href="About.html" class="nav__link">About</a>
+						</li>
+						<li class="nav__item">
+							<a href="Contact.html" class="nav__link">Contact</a>
+						</li>
+						<li class="nav__item">
+							<div class="select">
+								<div class="select__header">
+									<div class="select-icon">
+										<img
+											src="img/icons/Globe/Line.svg"
+											alt="globe icon"
+											class="select-icon__image"
+										/>
+									</div>
+									<span class="select__current">English</span>
+								</div>
+								<div class="select__body">
+									<div class="select__item">English</div>
+									<div class="select__item">Ukraine</div>
+									<div class="select__item">Français</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<div class="login-or-registr">
+					<div class="login-or-registr__container">
+						<a href="Login.html" class="login-or-registr__link">Login</a>
+					</div>
+					<div class="login-or-registr__container green">
+						<a href="Registration.html" class="login-or-registr__link green"
+							>Sign up</a
+						>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="container hero__container">
+					<h2 class="hero__title">
+						Discover the most <br />
+						engaging places
+					</h2>
+					<p class="hero__description">
+						Less planning 45,000 trips are ready for you
+					</p>
+					<button type="button" class="hero__cta">Start now</button>
+				</div>
+			</section>
+			<div class="container">
+				<div class="search-box">
+					<div class="search-box__in">
+						<button class="search-box__item location">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M18.2511 2.47775C20.3117 1.61917 22.3789 3.68639 21.5203 5.74698L15.5968 19.9634C14.4384 22.7437 10.3636 22.2738 9.86839 19.3028L9.12938 14.8687L4.6953 14.1297C1.72431 13.6345 1.25437 9.55972 4.03465 8.40127L18.2511 2.47775ZM19.6742 4.97775C19.8459 4.56563 19.4324 4.15219 19.0203 4.3239L4.80388 10.2474C3.87712 10.6336 4.03377 11.9918 5.02409 12.1569L9.45818 12.8959C10.3011 13.0364 10.9617 13.697 11.1022 14.5399L11.8412 18.974C12.0062 19.9643 13.3645 20.121 13.7506 19.1942L19.6742 4.97775Z"
+									fill="#B1B5C4"
+								/>
+							</svg>
+							<div class="search-box__text">
+								<input
+									class="search-box__title"
+									autocomplete="off"
+									placeholder="Location"
+								/>
+								<span class="search-box__description"
+									>Where are you going?</span
+								>
+							</div>
+						</button>
+						<button class="search-box__item activity">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M20.772 9.156L19.404 5.051C19.2056 4.45348 18.8238 3.9337 18.3131 3.56551C17.8024 3.19732 17.1886 2.99944 16.559 3H7.441C6.81139 2.99944 6.19761 3.19732 5.68688 3.56551C5.17615 3.9337 4.79445 4.45348 4.596 5.051L3.228 9.156C2.86461 9.30848 2.55428 9.56476 2.33584 9.89277C2.11741 10.2208 2.00059 10.6059 2 11V16C2 16.753 2.423 17.402 3.039 17.743C3.026 17.809 3 17.869 3 17.938V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H5C5.26522 21 5.51957 20.8946 5.70711 20.7071C5.89464 20.5196 6 20.2652 6 20V18H18V20C18 20.2652 18.1054 20.5196 18.2929 20.7071C18.4804 20.8946 18.7348 21 19 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V17.938C21 17.869 20.974 17.808 20.961 17.743C21.2744 17.5721 21.5362 17.3202 21.7189 17.0136C21.9017 16.707 21.9988 16.357 22 16V11C22 10.171 21.492 9.459 20.772 9.156ZM4 16V11H20L20.002 16H4ZM7.441 5H16.558C16.989 5 17.371 5.274 17.507 5.684L18.613 9H5.387L6.492 5.684C6.55835 5.4848 6.68572 5.31153 6.85605 5.18876C7.02638 5.06599 7.23104 4.99995 7.441 5Z"
+									fill="#B1B5C4"
+								/>
+								<path
+									d="M6.5 15C7.32843 15 8 14.3284 8 13.5C8 12.6716 7.32843 12 6.5 12C5.67157 12 5 12.6716 5 13.5C5 14.3284 5.67157 15 6.5 15Z"
+									fill="#B1B5C4"
+								/>
+								<path
+									d="M17.5 15C18.3284 15 19 14.3284 19 13.5C19 12.6716 18.3284 12 17.5 12C16.6716 12 16 12.6716 16 13.5C16 14.3284 16.6716 15 17.5 15Z"
+									fill="#B1B5C4"
+								/>
+							</svg>
+
+							<div class="search-box__text">
+								<h3 class="search-box__title">Activity</h3>
+								<span class="search-box__description">Add Activity</span>
+							</div>
+						</button>
+						<button class="search-box__item dates">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M19 6H5C4.44772 6 4 6.44772 4 7V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V7C20 6.44771 19.5523 6 19 6ZM5 4C3.34315 4 2 5.34315 2 7V19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V7C22 5.34315 20.6569 4 19 4H5Z"
+									fill="#B1B5C4"
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M10 12C9.44772 12 9 12.4477 9 13C9 13.5523 9.44772 14 10 14H17C17.5523 14 18 13.5523 18 13C18 12.4477 17.5523 12 17 12H10ZM7 16C6.44772 16 6 16.4477 6 17C6 17.5523 6.44772 18 7 18H13C13.5523 18 14 17.5523 14 17C14 16.4477 13.5523 16 13 16H7Z"
+									fill="#B1B5C4"
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M7 2C6.44772 2 6 2.44772 6 3V7C6 7.55228 6.44772 8 7 8C7.55228 8 8 7.55228 8 7V3C8 2.44772 7.55228 2 7 2ZM17 2C16.4477 2 16 2.44772 16 3V7C16 7.55228 16.4477 8 17 8C17.5523 8 18 7.55228 18 7V3C18 2.44772 17.5523 2 17 2Z"
+									fill="#B1B5C4"
+								/>
+							</svg>
+
+							<div class="search-box__text">
+								<h3 class="search-box__title">Dates</h3>
+								<span class="search-box__description">Add date</span>
+							</div>
+						</button>
+						<button class="search-box__item guest">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M12 13C8.13401 13 5 16.134 5 20V22C5 22.5523 4.55228 23 4 23C3.44772 23 3 22.5523 3 22V20C3 15.0294 7.02944 11 12 11C16.9706 11 21 15.0294 21 20V22C21 22.5523 20.5523 23 20 23C19.4477 23 19 22.5523 19 22V20C19 16.134 15.866 13 12 13Z"
+									fill="#B1B5C4"
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11ZM12 13C15.3137 13 18 10.3137 18 7C18 3.68629 15.3137 1 12 1C8.68629 1 6 3.68629 6 7C6 10.3137 8.68629 13 12 13Z"
+									fill="#B1B5C4"
+								/>
+							</svg>
+
+							<div class="search-box__text">
+								<h3 class="search-box__title">Guest</h3>
+								<span class="search-box__description">Add guest</span>
+							</div>
+						</button>
+						<div class="search-button_box">
+							<button class="search-button">
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M14.9056 16.3199C13.551 17.3729 11.8487 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.551 16.3199 14.9056L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.9056 16.3199ZM16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4C13.3137 4 16 6.68629 16 10Z"
+										fill="#FCFCFD"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="filter-box">
+						<div class="rangeprice">
+							<span class="rangeprice__text">Price range</span>
+							<div class="rangeprice-box">
+								<label for="from" class="rangeprice__label">From</label>
+								<input
+									type="number"
+									name="from"
+									value="1000"
+									class="rangeprice__input"
+								/>
+								<label for="to" class="rangeprice__label">To</label>
+								<input
+									type="number"
+									name="to"
+									value="5000"
+									class="rangeprice__input"
+								/>
+							</div>
+						</div>
+						<div class="reviewscore">
+							<span class="reviewscore__text">Review score</span>
+							<div class="reviewbox">
+								<div class="reviewscore-stars">
+									<label for="reviewscore-5" class="reviewscore__label"
+										><input
+											type="checkbox"
+											name="reviewscore"
+											id="reviewscore-5"
+											class="reviewcheckboxhidden" />
+										<span class="reviewcheckbox"> </span>
+										<img src="img/rate5.svg" alt="rating 5 star"
+									/></label>
+								</div>
+								<div class="reviewscore-stars">
+									<label for="reviewscore-4" class="reviewscore__label"
+										><input
+											type="checkbox"
+											name="reviewscore"
+											id="reviewscore-4"
+											class="reviewcheckboxhidden" />
+										<span class="reviewcheckbox"> </span>
+										<img src="img/rate4.svg" alt="rating 4 stars"
+									/></label>
+								</div>
+								<div class="reviewscore-stars">
+									<label for="reviewscore-3" class="reviewscore__label">
+										<input
+											type="checkbox"
+											name="reviewscore"
+											id="reviewscore-3"
+											class="reviewcheckboxhidden" />
+										<span class="reviewcheckbox"> </span>
+										<img src="img/rate3.svg" alt="rating 3 stars"
+									/></label>
+								</div>
+								<div class="reviewscore-stars">
+									<label for="reviewscore-2" class="reviewscore__label">
+										<input
+											type="checkbox"
+											name="reviewscore"
+											id="reviewscore-2"
+											class="reviewcheckboxhidden" />
+										<span class="reviewcheckbox"> </span>
+										<img src="img/rate2.svg" alt="rating 2 stars"
+									/></label>
+								</div>
+								<div class="reviewscore-stars">
+									<label for="reviewscore-1" class="reviewscore__label">
+										<input
+											type="checkbox"
+											name="reviewscore"
+											id="reviewscore-1"
+											class="reviewcheckboxhidden" />
+										<span class="reviewcheckbox"> </span>
+										<img src="img/rate1.svg" alt="rating 1 star"
+									/></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="filterbutton">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M16.2071 9.79289C15.8166 9.40237 15.1834 9.40237 14.7929 9.79289L12 12.5858L9.20711 9.79289C8.81658 9.40237 8.18342 9.40237 7.79289 9.79289C7.40237 10.1834 7.40237 10.8166 7.79289 11.2071L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L16.2071 11.2071C16.5976 10.8166 16.5976 10.1834 16.2071 9.79289Z"
+								fill="#777E91"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</main>
+		<script src="js/language.js" type="module"></script>
+		<script src="js/search-box.js" type="module"></script>
+	</body>
+</html>
