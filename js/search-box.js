@@ -1,6 +1,7 @@
 const searchBox = document.querySelector('.search-box')
 const filterBox = document.querySelector('.filter-box')
-const rangeInputs = document.querySelectorAll('.rangeprice__input')
+const rangeInputsFrom = document.querySelector('.rangeprice__input.from')
+const rangeInputsTo = document.querySelector('.rangeprice__input.to')
 const reviewCheckboxes = document.querySelectorAll('.reviewscore-stars input')
 const filterButton = document.querySelector('.filterbutton')
 

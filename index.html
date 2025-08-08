@@ -20,6 +20,48 @@
 		<link rel="manifest" href="favicon/site.webmanifest" />
 
 		<link rel="stylesheet" href="css/main.css" />
+		<link
+			rel="preload"
+			href="fonts/dm-sans-v16-latin-700.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="fonts/dm-sans-v16-latin-regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="fonts/poppins-v23-latin-500.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="fonts/poppins-v23-latin-600.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="fonts/poppins-v23-latin-700.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="fonts/poppins-v23-latin-regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
 	</head>
 	<body>
 		<header class="header">
@@ -244,14 +286,14 @@
 									type="number"
 									name="from"
 									value="1000"
-									class="rangeprice__input"
+									class="rangeprice__input from"
 								/>
 								<label for="to" class="rangeprice__label">To</label>
 								<input
 									type="number"
 									name="to"
 									value="5000"
-									class="rangeprice__input"
+									class="rangeprice__input to"
 								/>
 							</div>
 						</div>
@@ -334,8 +376,1446 @@
 					</button>
 				</div>
 			</div>
+
+			<section class="gallery">
+				<div class="container">
+					<div class="gallery__info">
+						<h3 class="gallery__title">Discover Weekly</h3>
+						<p class="gallery__description">
+							An enim nullam tempor sapien gravida donec enim<br />
+							ipsum
+						</p>
+					</div>
+					<div class="gallery-controls">
+						<div class="gallery-controls__buttons">
+							<button
+								class="gallery-controls__button gallery-controls__button--active"
+								type="button"
+							>
+								Domestic
+							</button>
+							<button class="gallery-controls__button" type="button">
+								Foreign
+							</button>
+						</div>
+						<div class="gallery-controls__arrows">
+							<button
+								class="controls__arrow controls__arrow--left"
+								type="button"
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M9.90906 7.26521C9.50324 6.8906 8.87058 6.9159 8.49597 7.32172L5.2652 10.8217C4.9116 11.2047 4.9116 11.7952 5.26519 12.1782L8.49597 15.6783C8.87057 16.0841 9.50323 16.1094 9.90905 15.7348C10.3149 15.3602 10.3402 14.7276 9.96558 14.3217L8.28397 12.5L18 12.5C18.5523 12.5 19 12.0523 19 11.5C19 10.9477 18.5523 10.5 18 10.5L8.284 10.5L9.96557 8.67829C10.3402 8.27247 10.3149 7.63981 9.90906 7.26521Z"
+										fill="#777E91"
+									/>
+								</svg>
+							</button>
+							<button
+								class="controls__arrow controls__arrow--right controls__arrow--nextorprevious"
+								type="button"
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+										fill="#777E91"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="gallery-cards">
+						<ul class="gallery-cards__list">
+							<li class="gallery-cards__item">
+								<div class="gallery-cards__image-box">
+									<img
+										src="img/cards_photo1.png"
+										alt="Venice, Rome & Milan"
+										class="gallery-cards__image"
+										width="256px"
+										height="220px"
+									/>
+									<button class="gallery-addfavorite">
+										<svg
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											class="gallery-addfavorite-svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+												fill="#B1B5C4"
+											/>
+										</svg>
+									</button>
+									<a href="#" class="gallery-explorelink">
+										<span class="gallery-explorelink__link">Explore</span>
+									</a>
+								</div>
+								<div class="gallery-cards__info">
+									<h4 class="gallery-cards__title">Venice, Rome & Milan</h4>
+									<div class="gallery-cards__aboutandprice">
+										<span class="gallery-cards__about">Karineside</span>
+										<span class="gallery-cards__price"
+											><span class="discount">$699</span> $548</span
+										>
+									</div>
+									<div class="gallery-cards__dateandstars">
+										<span class="gallery-cards__dates"
+											>Tue, Jul 20 - Fri, Jul 23</span
+										>
+										<div class="gallery-cards__stars">
+											<svg
+												width="12"
+												height="12"
+												viewBox="0 0 12 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+													fill="#23262F"
+												/>
+											</svg>
+											<span class="gallery-cards__star">4.9</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gallery-cards__item">
+								<div class="gallery-cards__image-box">
+									<img
+										src="img/galleryimg2.jpg"
+										alt="Venice, Rome & Milan"
+										class="gallery-cards__image"
+										width="256px"
+										height="220px"
+									/>
+									<button class="gallery-addfavorite">
+										<svg
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											class="gallery-addfavorite-svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+												fill="#B1B5C4"
+											/>
+										</svg>
+									</button>
+									<a href="#" class="gallery-explorelink">
+										<span class="gallery-explorelink__link">Explore</span>
+									</a>
+								</div>
+								<div class="gallery-cards__info">
+									<h4 class="gallery-cards__title">Venice, Rome & Milan</h4>
+									<div class="gallery-cards__aboutandprice">
+										<span class="gallery-cards__about">Karineside</span>
+										<span class="gallery-cards__price"
+											><span class="discount">$699</span> $548</span
+										>
+									</div>
+									<div class="gallery-cards__dateandstars">
+										<span class="gallery-cards__dates"
+											>Tue, Jul 20 - Fri, Jul 23</span
+										>
+										<div class="gallery-cards__stars">
+											<svg
+												width="12"
+												height="12"
+												viewBox="0 0 12 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+													fill="#23262F"
+												/>
+											</svg>
+											<span class="gallery-cards__star">4.9</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gallery-cards__item">
+								<div class="gallery-cards__image-box">
+									<img
+										src="img/galleryimg3.jpg"
+										alt="Venice, Rome & Milan"
+										class="gallery-cards__image"
+										width="256px"
+										height="220px"
+									/>
+									<button class="gallery-addfavorite">
+										<svg
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											class="gallery-addfavorite-svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+												fill="#B1B5C4"
+											/>
+										</svg>
+									</button>
+									<a href="#" class="gallery-explorelink">
+										<span class="gallery-explorelink__link">Explore</span>
+									</a>
+								</div>
+								<div class="gallery-cards__info">
+									<h4 class="gallery-cards__title">Venice, Rome & Milan</h4>
+									<div class="gallery-cards__aboutandprice">
+										<span class="gallery-cards__about">Karineside</span>
+										<span class="gallery-cards__price"
+											><span class="discount">$699</span> $548</span
+										>
+									</div>
+									<div class="gallery-cards__dateandstars">
+										<span class="gallery-cards__dates"
+											>Tue, Jul 20 - Fri, Jul 23</span
+										>
+										<div class="gallery-cards__stars">
+											<svg
+												width="12"
+												height="12"
+												viewBox="0 0 12 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+													fill="#23262F"
+												/>
+											</svg>
+											<span class="gallery-cards__star">4.9</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gallery-cards__item">
+								<div class="gallery-cards__image-box">
+									<img
+										src="img/galleryimg4.jpg"
+										alt="Venice, Rome & Milan"
+										class="gallery-cards__image"
+										width="256px"
+										height="220px"
+									/>
+									<button class="gallery-addfavorite">
+										<svg
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											class="gallery-addfavorite-svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+												fill="#B1B5C4"
+											/>
+										</svg>
+									</button>
+									<a href="#" class="gallery-explorelink">
+										<span class="gallery-explorelink__link">Explore</span>
+									</a>
+								</div>
+								<div class="gallery-cards__info">
+									<h4 class="gallery-cards__title">Venice, Rome & Milan</h4>
+									<div class="gallery-cards__aboutandprice">
+										<span class="gallery-cards__about">Karineside</span>
+										<span class="gallery-cards__price"
+											><span class="discount">$699</span> $548</span
+										>
+									</div>
+									<div class="gallery-cards__dateandstars">
+										<span class="gallery-cards__dates"
+											>Tue, Jul 20 - Fri, Jul 23</span
+										>
+										<div class="gallery-cards__stars">
+											<svg
+												width="12"
+												height="12"
+												viewBox="0 0 12 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+													fill="#23262F"
+												/>
+											</svg>
+											<span class="gallery-cards__star">4.9</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gallery-cards__item">
+								<div class="gallery-cards__image-box">
+									<img
+										src="img/galleryimg8.jpg"
+										alt="Venice, Rome & Milan"
+										class="gallery-cards__image"
+										width="256px"
+										height="220px"
+									/>
+									<button class="gallery-addfavorite">
+										<svg
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											class="gallery-addfavorite-svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+												fill="#B1B5C4"
+											/>
+										</svg>
+									</button>
+									<a href="#" class="gallery-explorelink">
+										<span class="gallery-explorelink__link">Explore</span>
+									</a>
+								</div>
+								<div class="gallery-cards__info">
+									<h4 class="gallery-cards__title">Venice, Rome & Milan</h4>
+									<div class="gallery-cards__aboutandprice">
+										<span class="gallery-cards__about">Karineside</span>
+										<span class="gallery-cards__price"
+											><span class="discount">$699</span> $548</span
+										>
+									</div>
+									<div class="gallery-cards__dateandstars">
+										<span class="gallery-cards__dates"
+											>Tue, Jul 20 - Fri, Jul 23</span
+										>
+										<div class="gallery-cards__stars">
+											<svg
+												width="12"
+												height="12"
+												viewBox="0 0 12 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+													fill="#23262F"
+												/>
+											</svg>
+											<span class="gallery-cards__star">4.9</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gallery-cards__item">
+								<div class="gallery-cards__image-box">
+									<img
+										src="img/galleryimg7.jpg"
+										alt="Venice, Rome & Milan"
+										class="gallery-cards__image"
+										width="256px"
+										height="220px"
+									/>
+									<button class="gallery-addfavorite">
+										<svg
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											class="gallery-addfavorite-svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+												fill="#B1B5C4"
+											/>
+										</svg>
+									</button>
+									<a href="#" class="gallery-explorelink">
+										<span class="gallery-explorelink__link">Explore</span>
+									</a>
+								</div>
+								<div class="gallery-cards__info">
+									<h4 class="gallery-cards__title">Venice, Rome & Milan</h4>
+									<div class="gallery-cards__aboutandprice">
+										<span class="gallery-cards__about">Karineside</span>
+										<span class="gallery-cards__price"
+											><span class="discount">$699</span> $548</span
+										>
+									</div>
+									<div class="gallery-cards__dateandstars">
+										<span class="gallery-cards__dates"
+											>Tue, Jul 20 - Fri, Jul 23</span
+										>
+										<div class="gallery-cards__stars">
+											<svg
+												width="12"
+												height="12"
+												viewBox="0 0 12 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+													fill="#23262F"
+												/>
+											</svg>
+											<span class="gallery-cards__star">4.9</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gallery-cards__item">
+								<div class="gallery-cards__image-box">
+									<img
+										src="img/galleryimg6.jpg"
+										alt="Venice, Rome & Milan"
+										class="gallery-cards__image"
+										width="256px"
+										height="220px"
+									/>
+									<button class="gallery-addfavorite">
+										<svg
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											class="gallery-addfavorite-svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+												fill="#B1B5C4"
+											/>
+										</svg>
+									</button>
+									<a href="#" class="gallery-explorelink">
+										<span class="gallery-explorelink__link">Explore</span>
+									</a>
+								</div>
+								<div class="gallery-cards__info">
+									<h4 class="gallery-cards__title">Venice, Rome & Milan</h4>
+									<div class="gallery-cards__aboutandprice">
+										<span class="gallery-cards__about">Karineside</span>
+										<span class="gallery-cards__price"
+											><span class="discount">$699</span> $548</span
+										>
+									</div>
+									<div class="gallery-cards__dateandstars">
+										<span class="gallery-cards__dates"
+											>Tue, Jul 20 - Fri, Jul 23</span
+										>
+										<div class="gallery-cards__stars">
+											<svg
+												width="12"
+												height="12"
+												viewBox="0 0 12 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+													fill="#23262F"
+												/>
+											</svg>
+											<span class="gallery-cards__star">4.9</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gallery-cards__item">
+								<div class="gallery-cards__image-box">
+									<img
+										src="img/galleryimg5.jpg"
+										alt="Venice, Rome & Milan"
+										class="gallery-cards__image"
+										width="256px"
+										height="220px"
+									/>
+									<button class="gallery-addfavorite">
+										<svg
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											class="gallery-addfavorite-svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+												fill="#B1B5C4"
+											/>
+										</svg>
+									</button>
+									<a href="#" class="gallery-explorelink">
+										<span class="gallery-explorelink__link">Explore</span>
+									</a>
+								</div>
+								<div class="gallery-cards__info">
+									<h4 class="gallery-cards__title">Venice, Rome & Milan</h4>
+									<div class="gallery-cards__aboutandprice">
+										<span class="gallery-cards__about">Karineside</span>
+										<span class="gallery-cards__price"
+											><span class="discount">$699</span> $548</span
+										>
+									</div>
+									<div class="gallery-cards__dateandstars">
+										<span class="gallery-cards__dates"
+											>Tue, Jul 20 - Fri, Jul 23</span
+										>
+										<div class="gallery-cards__stars">
+											<svg
+												width="12"
+												height="12"
+												viewBox="0 0 12 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+													fill="#23262F"
+												/>
+											</svg>
+											<span class="gallery-cards__star">4.9</span>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="steps">
+				<div class="container">
+					<div class="steps-info">
+						<span class="steps-info__span">3 steps for the perfect trip</span>
+						<h3 class="steps-info__title">Find Travel Perfection</h3>
+						<p class="steps-info__text">
+							An enim nullam tempor gravida donec enim congue magna at pretium
+							purus pretium ligula rutrum luctus risusd diam eget risus varius
+							blandit sit amet non magna.
+						</p>
+						<button type="button" class="book-info__button">Book now</button>
+					</div>
+					<div class="steps-cards">
+						<div class="steps-card tell-us">
+							<div class="steps-cards__image-box">
+								<img
+									src="img/ligh bulb.svg"
+									alt="Tell us what you want"
+									class="steps-cards__image"
+									width="48"
+									height="48"
+								/>
+							</div>
+							<div class="steps-cards__info">
+								<h4 class="steps-cards__title">Tell us what you want to do</h4>
+								<p class="steps-cards__text">
+									Fully layered dolor sit amet, consectetur adipisicing elit.
+									Facere, nobis, id expedita dolores officiis laboriosam.
+								</p>
+							</div>
+						</div>
+						<div class="steps-card travel-preference">
+							<div class="steps-cards__image-box">
+								<img
+									src="img/lightning.svg"
+									alt="Share your travel preference"
+									class="steps-cards__image"
+									width="48"
+									height="48"
+								/>
+							</div>
+							<div class="steps-cards__info">
+								<h4 class="steps-cards__title">Share your travel preference</h4>
+								<p class="steps-cards__text">
+									Fully layered dolor sit amet, consectetur adipisicing elit.
+									Facere, nobis, id expedita dolores officiis laboriosam.
+								</p>
+							</div>
+						</div>
+						<div class="steps-card recommend">
+							<div class="steps-cards__image-box">
+								<img
+									src="img/star.svg"
+									alt="We’ll give you recommendations"
+									class="steps-cards__image"
+									width="48"
+									height="48"
+								/>
+							</div>
+							<div class="steps-cards__info">
+								<h4 class="steps-cards__title">
+									We’ll give you recommendations
+								</h4>
+								<p class="steps-cards__text">
+									Fully layered dolor sit amet, consectetur adipisicing elit.
+									Facere, nobis, id expedita dolores officiis laboriosam.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="travel-guideline">
+				<div class="halfcontainer">
+					<div class="travel-guideline__box">
+						<div class="travel-guideline__info">
+							<span class="travel-guideline__span">Take A Tour</span>
+							<h3 class="travel-guideline__title">
+								Discover Our Travel Guideline
+							</h3>
+							<p class="travel-guideline__text">
+								An enim nullam tempor gravida donec enim congue magna at pretium
+								purus pretium ligula rutrum luctus risusd diam eget risus varius
+								blandit sit amet non magna.
+							</p>
+							<ul class="travel-guideline-advantages">
+								<li class="travel-guideline-advantages__item">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<circle cx="12" cy="12" r="10" fill="#4AC63F" />
+										<path
+											d="M8 12L11 15L17 9"
+											stroke="#FCFCFD"
+											stroke-width="2"
+											stroke-miterlimit="10"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									<span class="travel-guideline-advantages__text">
+										Luctus risusd diam eget</span
+									>
+								</li>
+								<li class="travel-guideline-advantages__item">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<circle cx="12" cy="12" r="10" fill="#4AC63F" />
+										<path
+											d="M8 12L11 15L17 9"
+											stroke="#FCFCFD"
+											stroke-width="2"
+											stroke-miterlimit="10"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									<span class="travel-guideline-advantages__text"
+										>Donec enim congue magna</span
+									>
+								</li>
+								<li class="travel-guideline-advantages__item">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<circle cx="12" cy="12" r="10" fill="#4AC63F" />
+										<path
+											d="M8 12L11 15L17 9"
+											stroke="#FCFCFD"
+											stroke-width="2"
+											stroke-miterlimit="10"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									<span class="travel-guideline-advantages__text"
+										>Blandit sit amet non magna</span
+									>
+								</li>
+							</ul>
+							<button type="button" class="travel-guideline__button">
+								Learn more
+							</button>
+						</div>
+						<img
+							src="img/guidelineimg.jpg"
+							alt="guideline image"
+							class="travel-guideline__image"
+							width="800px"
+							height="622px"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="total">
+				<div class="container">
+					<ul class="total__list">
+						<li class="total__list-item">
+							<div class="total__list-image-box">
+								<img
+									src="img/user.svg"
+									alt=" user"
+									class="total__list-image"
+									width="32"
+									height="32"
+								/>
+							</div>
+							<div class="total__list-number-box blue">
+								<span class="total__list-humber">28k</span>
+							</div>
+							<span class="total__list-about"> Total Users </span>
+						</li>
+						<li class="total__list-item">
+							<div class="total__list-image-box">
+								<img
+									src="img/tours.svg"
+									alt=" user"
+									class="total__list-image"
+									width="32"
+									height="32"
+								/>
+							</div>
+							<div class="total__list-number-box orange">
+								<span class="total__list-humber">12k</span>
+							</div>
+							<span class="total__list-about"> Total Tours </span>
+						</li>
+						<li class="total__list-item">
+							<div class="total__list-image-box purple">
+								<img
+									src="img/globe.svg"
+									alt=" user"
+									class="total__list-image"
+									width="32"
+									height="32"
+								/>
+							</div>
+							<div class="total__list-number-box purple">
+								<span class="total__list-humber">64k</span>
+							</div>
+							<span class="total__list-about"> Social Likes </span>
+						</li>
+						<li class="total__list-item">
+							<div class="total__list-image-box">
+								<img
+									src="img/starrating.svg"
+									alt=" user"
+									class="total__list-image"
+									width="32"
+									height="32"
+								/>
+							</div>
+							<div class="total__list-number-box green">
+								<span class="total__list-humber">14k</span>
+							</div>
+							<span class="total__list-about"> 5 Star Rating </span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="destinations">
+				<div class="container">
+					<div class="destinations-box">
+						<div class="destinations__info">
+							<span class="destinations__info-span"
+								>3 steps for the perfect trip</span
+							>
+							<h3 class="destinations__info-title">Popular Destinations</h3>
+							<p class="destinations__info-text">
+								An enim nullam tempor gravida donec enim congue magna at pretium
+								purus pretium ligula rutrum luctus risusd diam eget risus varius
+								blandit sit amet non magna.
+							</p>
+						</div>
+						<div class="controls__arrows destinations-controls__arrows">
+							<button
+								class="controls__arrow controls__arrow--left destinations-controls__arrows"
+								type="button"
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M9.90906 7.26521C9.50324 6.8906 8.87058 6.9159 8.49597 7.32172L5.2652 10.8217C4.9116 11.2047 4.9116 11.7952 5.26519 12.1782L8.49597 15.6783C8.87057 16.0841 9.50323 16.1094 9.90905 15.7348C10.3149 15.3602 10.3402 14.7276 9.96558 14.3217L8.28397 12.5L18 12.5C18.5523 12.5 19 12.0523 19 11.5C19 10.9477 18.5523 10.5 18 10.5L8.284 10.5L9.96557 8.67829C10.3402 8.27247 10.3149 7.63981 9.90906 7.26521Z"
+										fill="#777E91"
+									/>
+								</svg>
+							</button>
+							<button
+								class="controls__arrow controls__arrow--right controls__arrow--nextorprevious destinations-controls__arrows"
+								type="button"
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+										fill="#777E91"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<ul class="destinations-list">
+						<li class="destinations-item">
+							<a href="#" class="destinations-link">
+								<div class="destinations-image_box">
+									<img
+										src="img/destinations-one.jpg"
+										alt="Europe"
+										width="336px"
+										height="256px"
+										class="destinations-image"
+									/>
+									<div class="destinations-span_box">
+										<span class="destinations-span"> 07 Tours </span>
+									</div>
+								</div>
+							</a>
+							<div class="destinations-item_info">
+								<span class="destinations-item-title"> Europe </span>
+								<span class="destinations-item-price"
+									>From
+									<span class="destinations-item-price_bold">$540</span> per
+									day</span
+								>
+							</div>
+						</li>
+						<li class="destinations-item">
+							<a href="#" class="destinations-link">
+								<div class="destinations-image_box">
+									<img
+										src="img/destionations-second.jpg"
+										alt="Europe"
+										width="336px"
+										height="256px"
+										class="destinations-image"
+									/>
+									<div class="destinations-span_box">
+										<span class="destinations-span"> 07 Tours </span>
+									</div>
+								</div>
+							</a>
+							<div class="destinations-item_info">
+								<span class="destinations-item-title"> Europe </span>
+								<span class="destinations-item-price"
+									>From
+									<span class="destinations-item-price_bold">$540</span> per
+									day</span
+								>
+							</div>
+						</li>
+						<li class="destinations-item">
+							<a href="#" class="destinations-link">
+								<div class="destinations-image_box">
+									<img
+										src="img/destinations-third.jpg"
+										alt="Europe"
+										width="336px"
+										height="256px"
+										class="destinations-image"
+									/>
+									<div class="destinations-span_box">
+										<span class="destinations-span"> 07 Tours </span>
+									</div>
+								</div>
+							</a>
+							<div class="destinations-item_info">
+								<span class="destinations-item-title"> Europe </span>
+								<span class="destinations-item-price"
+									>From
+									<span class="destinations-item-price_bold">$540</span> per
+									day</span
+								>
+							</div>
+						</li>
+						<li class="destinations-item">
+							<a href="#" class="destinations-link">
+								<div class="destinations-image_box">
+									<img
+										src="img/destinations-four.jpg"
+										alt="Europe"
+										width="336px"
+										height="256px"
+										class="destinations-image"
+									/>
+									<div class="destinations-span_box">
+										<span class="destinations-span"> 07 Tours </span>
+									</div>
+								</div>
+							</a>
+							<div class="destinations-item_info">
+								<span class="destinations-item-title"> Europe </span>
+								<span class="destinations-item-price"
+									>From
+									<span class="destinations-item-price_bold">$540</span> per
+									day</span
+								>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="testimonials">
+				<div class="container">
+					<div class="testimonials__info-box">
+						<span class="testimonials__info-span">Testimonials</span>
+						<h3 class="testimonials__info-title">What our happy clients say</h3>
+						<button class="book-info__button">Book now</button>
+					</div>
+				</div>
+				<div class="testimonials__image-box">
+					<img
+						src="img/testimonials-fix.png"
+						alt="testimonials "
+						class="testimonials__image"
+					/>
+				</div>
+				<div class="container testimonials__box">
+					<button class="testimonials-button left">
+						<svg
+							width="61"
+							height="61"
+							viewBox="0 0 61 61"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M30.5 55.4443C44.3071 55.4443 55.5 44.2515 55.5 30.4443C55.5 16.6372 44.3071 5.44434 30.5 5.44434C16.6929 5.44434 5.5 16.6372 5.5 30.4443C5.5 44.2515 16.6929 55.4443 30.5 55.4443Z"
+								stroke="#E6E8EC"
+								stroke-width="2"
+								stroke-miterlimit="10"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M33.6516 39.2691L24.8516 30.4441L33.6516 21.6191"
+								stroke="#777E91"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</button>
+					<div class="testimonials__text-box">
+						<svg
+							width="40"
+							height="41"
+							viewBox="0 0 40 41"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M13.482 19.9398H5.66536C5.7987 12.1564 7.33203 10.8731 12.1154 8.03976C12.6654 7.70643 12.8487 7.00643 12.5154 6.43976C12.1987 5.88976 11.482 5.70643 10.932 6.03976C5.2987 9.3731 3.33203 11.4064 3.33203 21.0898V30.0731C3.33203 32.9231 5.6487 35.2231 8.48203 35.2231H13.482C16.4154 35.2231 18.632 33.0064 18.632 30.0731V25.0731C18.632 22.1564 16.4154 19.9398 13.482 19.9398Z"
+								fill="#B1B5C4"
+							/>
+							<path
+								d="M31.5182 19.9398H23.7016C23.8349 12.1564 25.3682 10.8731 30.1516 8.03976C30.7016 7.70643 30.8849 7.00643 30.5516 6.43976C30.2182 5.88976 29.5182 5.70643 28.9516 6.03976C23.3182 9.3731 21.3516 11.4064 21.3516 21.1064V30.0898C21.3516 32.9398 23.6682 35.2398 26.5016 35.2398H31.5016C34.4349 35.2398 36.6516 33.0231 36.6516 30.0898V25.0898C36.6682 22.1564 34.4516 19.9398 31.5182 19.9398Z"
+								fill="#B1B5C4"
+							/>
+						</svg>
+						<p class="testimonials__text">
+							An enim nullam tempor gravida donec enim congue magna at pretium
+							purus pretium ligula rutrum luctus risusd diam eget risus varius
+							blandit sit amet non magna.
+						</p>
+					</div>
+					<button class="testimonials-button right">
+						<svg
+							width="61"
+							height="60"
+							viewBox="0 0 61 60"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M30.5 55C44.3071 55 55.5 43.8071 55.5 30C55.5 16.1929 44.3071 5 30.5 5C16.6929 5 5.5 16.1929 5.5 30C5.5 43.8071 16.6929 55 30.5 55Z"
+								stroke="#E6E8EC"
+								stroke-width="2"
+								stroke-miterlimit="10"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M27.3516 38.8248L36.1516 29.9998L27.3516 21.1748"
+								stroke="#777E91"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</button>
+				</div>
+			</section>
+			<section class="fleet-travel">
+				<div class="container">
+					<div class="fleet-travel__textbox">
+						<div class="fleet-travel__text">
+							<span class="fleet-travel__textbox-span">
+								fleet travel ui kit
+							</span>
+							<h3 class="fleet-travel__texbox-book__title">
+								Book a ticket<br />& just leave
+							</h3>
+						</div>
+						<div class="fleet-travel__texbox-book">
+							<button class="book-info__button">Book now</button>
+						</div>
+					</div>
+				</div>
+				<div class="fleet-travel__videobox">
+					<img src="img/video.jpg" alt="fleet travel video" />
+					<button class="fleet-travel__playbutton">
+						<svg
+							width="24"
+							height="25"
+							viewBox="0 0 24 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							class="fleet-travel__playbutton-svg"
+						>
+							<path
+								d="M3.69922 4.94226C3.69922 2.59173 6.27971 1.15425 8.27828 2.39146L20.5787 10.006C22.4733 11.1788 22.4733 13.9348 20.5787 15.1076L8.27828 22.7221C6.27971 23.9594 3.69922 22.5219 3.69922 20.1714V4.94226Z"
+								fill="#777E91"
+							/>
+						</svg>
+					</button>
+				</div>
+			</section>
+			<section class="travel-tips">
+				<div class="container">
+					<div class="travel-tips-box">
+						<div class="travel-tips__info">
+							<h3 class="travel-tips__info-title">Travel Tips & Advice</h3>
+							<p class="travel-tips__info-text">
+								An enim nullam tempor gravida donec enim congue magna at pretium
+								purus pretium ligula rutrum luctus risusd diam eget risus varius
+								blandit sit amet non magna.
+							</p>
+						</div>
+						<div class="controls__arrows travel-tips-controls__arrows">
+							<button
+								class="controls__arrow controls__arrow--left travel-tips-controls__arrows"
+								type="button"
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M9.90906 7.26521C9.50324 6.8906 8.87058 6.9159 8.49597 7.32172L5.2652 10.8217C4.9116 11.2047 4.9116 11.7952 5.26519 12.1782L8.49597 15.6783C8.87057 16.0841 9.50323 16.1094 9.90905 15.7348C10.3149 15.3602 10.3402 14.7276 9.96558 14.3217L8.28397 12.5L18 12.5C18.5523 12.5 19 12.0523 19 11.5C19 10.9477 18.5523 10.5 18 10.5L8.284 10.5L9.96557 8.67829C10.3402 8.27247 10.3149 7.63981 9.90906 7.26521Z"
+										fill="#777E91"
+									/>
+								</svg>
+							</button>
+							<button
+								class="controls__arrow controls__arrow--right controls__arrow--nextorprevious travel-tips-controls__arrows"
+								type="button"
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+										fill="#777E91"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<ul class="travel-tips__list">
+						<li class="travel-tips__item">
+							<div class="gallery-cards__image-box">
+								<img
+									src="img/tips-first.jpg"
+									alt="Venice, Rome & Milan"
+									class="gallery-cards__image"
+									width="352px"
+									height="320px"
+								/>
+								<button class="gallery-addfavorite">
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+										class="gallery-addfavorite-svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+											fill="#B1B5C4"
+										/>
+									</svg>
+								</button>
+								<a href="#" class="gallery-explorelink">
+									<span class="gallery-explorelink__link">Read More</span>
+								</a>
+							</div>
+							<div class="travel-tips__item-info_box">
+								<h4 class="travel-tips__item-info__title">
+									Pack wisely before traveling
+								</h4>
+								<p class="travel-tips__item-info__text">
+									It is almost impossible to read the news without coming across
+									a lead story elections through fake social media accounts...
+								</p>
+								<div class="travel-tips__item-info__datebox">
+									<svg
+										width="24"
+										height="25"
+										viewBox="0 0 24 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M19 6.55664H5C4.44772 6.55664 4 7.00436 4 7.55664V19.5566C4 20.1089 4.44772 20.5566 5 20.5566H19C19.5523 20.5566 20 20.1089 20 19.5566V7.55664C20 7.00436 19.5523 6.55664 19 6.55664ZM5 4.55664C3.34315 4.55664 2 5.89979 2 7.55664V19.5566C2 21.2135 3.34315 22.5566 5 22.5566H19C20.6569 22.5566 22 21.2135 22 19.5566V7.55664C22 5.89979 20.6569 4.55664 19 4.55664H5Z"
+											fill="#777E91"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10 12.5566C9.44772 12.5566 9 13.0044 9 13.5566C9 14.1089 9.44772 14.5566 10 14.5566H17C17.5523 14.5566 18 14.1089 18 13.5566C18 13.0044 17.5523 12.5566 17 12.5566H10ZM7 16.5566C6.44772 16.5566 6 17.0044 6 17.5566C6 18.1089 6.44772 18.5566 7 18.5566H13C13.5523 18.5566 14 18.1089 14 17.5566C14 17.0044 13.5523 16.5566 13 16.5566H7Z"
+											fill="#777E91"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M7 2.55664C6.44772 2.55664 6 3.00436 6 3.55664V7.55664C6 8.10893 6.44772 8.55664 7 8.55664C7.55228 8.55664 8 8.10893 8 7.55664V3.55664C8 3.00436 7.55228 2.55664 7 2.55664ZM17 2.55664C16.4477 2.55664 16 3.00436 16 3.55664V7.55664C16 8.10893 16.4477 8.55664 17 8.55664C17.5523 8.55664 18 8.10893 18 7.55664V3.55664C18 3.00436 17.5523 2.55664 17 2.55664Z"
+											fill="#777E91"
+										/>
+									</svg>
+									<span class="travel-tips__item-info__date">
+										25 May, 2021
+									</span>
+								</div>
+							</div>
+						</li>
+						<li class="travel-tips__item">
+							<div class="gallery-cards__image-box">
+								<img
+									src="img/tips-third.jpg"
+									alt="Venice, Rome & Milan"
+									class="gallery-cards__image"
+									width="352px"
+									height="320px"
+								/>
+								<button class="gallery-addfavorite">
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+										class="gallery-addfavorite-svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+											fill="#B1B5C4"
+										/>
+									</svg>
+								</button>
+								<a href="#" class="gallery-explorelink">
+									<span class="gallery-explorelink__link">Read More</span>
+								</a>
+							</div>
+							<div class="travel-tips__item-info_box">
+								<h4 class="travel-tips__item-info__title">
+									Pack wisely before traveling
+								</h4>
+								<p class="travel-tips__item-info__text">
+									It is almost impossible to read the news without coming across
+									a lead story elections through fake social media accounts...
+								</p>
+								<div class="travel-tips__item-info__datebox">
+									<svg
+										width="24"
+										height="25"
+										viewBox="0 0 24 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M19 6.55664H5C4.44772 6.55664 4 7.00436 4 7.55664V19.5566C4 20.1089 4.44772 20.5566 5 20.5566H19C19.5523 20.5566 20 20.1089 20 19.5566V7.55664C20 7.00436 19.5523 6.55664 19 6.55664ZM5 4.55664C3.34315 4.55664 2 5.89979 2 7.55664V19.5566C2 21.2135 3.34315 22.5566 5 22.5566H19C20.6569 22.5566 22 21.2135 22 19.5566V7.55664C22 5.89979 20.6569 4.55664 19 4.55664H5Z"
+											fill="#777E91"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10 12.5566C9.44772 12.5566 9 13.0044 9 13.5566C9 14.1089 9.44772 14.5566 10 14.5566H17C17.5523 14.5566 18 14.1089 18 13.5566C18 13.0044 17.5523 12.5566 17 12.5566H10ZM7 16.5566C6.44772 16.5566 6 17.0044 6 17.5566C6 18.1089 6.44772 18.5566 7 18.5566H13C13.5523 18.5566 14 18.1089 14 17.5566C14 17.0044 13.5523 16.5566 13 16.5566H7Z"
+											fill="#777E91"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M7 2.55664C6.44772 2.55664 6 3.00436 6 3.55664V7.55664C6 8.10893 6.44772 8.55664 7 8.55664C7.55228 8.55664 8 8.10893 8 7.55664V3.55664C8 3.00436 7.55228 2.55664 7 2.55664ZM17 2.55664C16.4477 2.55664 16 3.00436 16 3.55664V7.55664C16 8.10893 16.4477 8.55664 17 8.55664C17.5523 8.55664 18 8.10893 18 7.55664V3.55664C18 3.00436 17.5523 2.55664 17 2.55664Z"
+											fill="#777E91"
+										/>
+									</svg>
+									<span class="travel-tips__item-info__date">
+										25 May, 2021
+									</span>
+								</div>
+							</div>
+						</li>
+						<li class="travel-tips__item">
+							<div class="gallery-cards__image-box">
+								<img
+									src="img/tips-second.jpg"
+									alt="Venice, Rome & Milan"
+									class="gallery-cards__image"
+									width="352px"
+									height="320px"
+								/>
+								<button class="gallery-addfavorite">
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+										class="gallery-addfavorite-svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10.5757 5.76422C10.2533 6.07365 9.74414 6.07365 9.4217 5.76422L8.8447 5.2105C8.16934 4.56239 7.25698 4.16667 6.2487 4.16667C4.17763 4.16667 2.4987 5.8456 2.4987 7.91667C2.4987 9.90219 3.57352 11.5417 5.12516 12.8888C6.67813 14.237 8.53486 15.1312 9.64424 15.5876C9.87619 15.683 10.1212 15.683 10.3532 15.5876C11.4625 15.1312 13.3193 14.237 14.8722 12.8888C16.4239 11.5417 17.4987 9.90218 17.4987 7.91667C17.4987 5.8456 15.8198 4.16667 13.7487 4.16667C12.7404 4.16667 11.8281 4.56239 11.1527 5.2105L10.5757 5.76422ZM9.9987 4.00798C9.02545 3.074 7.70411 2.5 6.2487 2.5C3.25716 2.5 0.832031 4.92512 0.832031 7.91667C0.832031 13.2235 6.64065 16.1542 9.01019 17.1289C9.64834 17.3914 10.3491 17.3914 10.9872 17.1289C13.3567 16.1542 19.1654 13.2235 19.1654 7.91667C19.1654 4.92512 16.7402 2.5 13.7487 2.5C12.2933 2.5 10.9719 3.074 9.9987 4.00798Z"
+											fill="#B1B5C4"
+										/>
+									</svg>
+								</button>
+								<a href="#" class="gallery-explorelink">
+									<span class="gallery-explorelink__link">Read More</span>
+								</a>
+							</div>
+							<div class="travel-tips__item-info_box">
+								<h4 class="travel-tips__item-info__title">
+									Pack wisely before traveling
+								</h4>
+								<p class="travel-tips__item-info__text">
+									It is almost impossible to read the news without coming across
+									a lead story elections through fake social media accounts...
+								</p>
+								<div class="travel-tips__item-info__datebox">
+									<svg
+										width="24"
+										height="25"
+										viewBox="0 0 24 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M19 6.55664H5C4.44772 6.55664 4 7.00436 4 7.55664V19.5566C4 20.1089 4.44772 20.5566 5 20.5566H19C19.5523 20.5566 20 20.1089 20 19.5566V7.55664C20 7.00436 19.5523 6.55664 19 6.55664ZM5 4.55664C3.34315 4.55664 2 5.89979 2 7.55664V19.5566C2 21.2135 3.34315 22.5566 5 22.5566H19C20.6569 22.5566 22 21.2135 22 19.5566V7.55664C22 5.89979 20.6569 4.55664 19 4.55664H5Z"
+											fill="#777E91"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10 12.5566C9.44772 12.5566 9 13.0044 9 13.5566C9 14.1089 9.44772 14.5566 10 14.5566H17C17.5523 14.5566 18 14.1089 18 13.5566C18 13.0044 17.5523 12.5566 17 12.5566H10ZM7 16.5566C6.44772 16.5566 6 17.0044 6 17.5566C6 18.1089 6.44772 18.5566 7 18.5566H13C13.5523 18.5566 14 18.1089 14 17.5566C14 17.0044 13.5523 16.5566 13 16.5566H7Z"
+											fill="#777E91"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M7 2.55664C6.44772 2.55664 6 3.00436 6 3.55664V7.55664C6 8.10893 6.44772 8.55664 7 8.55664C7.55228 8.55664 8 8.10893 8 7.55664V3.55664C8 3.00436 7.55228 2.55664 7 2.55664ZM17 2.55664C16.4477 2.55664 16 3.00436 16 3.55664V7.55664C16 8.10893 16.4477 8.55664 17 8.55664C17.5523 8.55664 18 8.10893 18 7.55664V3.55664C18 3.00436 17.5523 2.55664 17 2.55664Z"
+											fill="#777E91"
+										/>
+									</svg>
+									<span class="travel-tips__item-info__date">
+										25 May, 2021
+									</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-in">
+					<div class="footer-in__logobox">
+						<a href="index.html" class="logo__footer">
+							<img
+								src="img/Logo symbol.svg"
+								alt="Tripie Logo"
+								class="logo__image"
+								width="32px"
+								height="32px"
+							/>
+							<span class="logo__name-footer">Tripie</span>
+						</a>
+						<p class="footer-in__text">
+							There are many variations of passages of available but it is the
+							majority of suffered that a alteration in that some dummy text.
+						</p>
+					</div>
+					<div class="footer-in__listbox">
+						<h3 class="footer-in__listbox-title">About</h3>
+						<ul class="footer-in__list">
+							<li class="footer-in__item">
+								<a href="#" class="footer-in__link">Discover</a>
+							</li>
+							<li class="footer-in__item">
+								<a href="#" class="footer-in__link">Find Travel</a>
+							</li>
+							<li class="footer-in__item">
+								<a href="#" class="footer-in__link">Popular Destinations</a>
+							</li>
+							<li class="footer-in__item">
+								<a href="#" class="footer-in__link">Reviews</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-in__listbox">
+						<h3 class="footer-in__listbox-title">About</h3>
+						<ul class="footer-in__list">
+							<li class="footer-in__item">
+								<a href="#" class="footer-in__link">Customer Support</a>
+							</li>
+							<li class="footer-in__item">
+								<a href="#" class="footer-in__link">Privacy & Policy</a>
+							</li>
+							<li class="footer-in__item">
+								<a href="#" class="footer-in__link">Contact Channels</a>
+							</li>
+						</ul>
+					</div>
+					<form action="/subscribe" method="POST" class="footer-in__form">
+						<label for="email" class="footer-in__form-label"
+							>JOIN OUR COMMUNITY 🔥</label
+						>
+						<div class="footer-in__form-box">
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Enter your email"
+								class="footer-in__form-input"
+								required
+							/>
+							<div class="footer-in__form-buttonbox">
+								<button type="submit" class="footer-in__form-button">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M14.0909 7.82136C14.4968 7.44675 15.1294 7.47206 15.504 7.87787L18.7348 11.3778C19.0884 11.7609 19.0884 12.3513 18.7348 12.7344L15.504 16.2344C15.1294 16.6403 14.4968 16.6656 14.091 16.291C13.6851 15.9164 13.6598 15.2837 14.0344 14.8779L15.716 13.0561L6 13.0561C5.44771 13.0561 5 12.6084 5 12.0561C5 11.5038 5.44771 11.0561 6 11.0561L15.716 11.0561L14.0344 9.23444C13.6598 8.82862 13.6851 8.19597 14.0909 7.82136Z"
+											fill="#FCFCFD"
+										/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</footer>
 		<script src="js/language.js" type="module"></script>
 		<script src="js/search-box.js" type="module"></script>
+		<script type="module" src="js/gallery.js"></script>
+		<script type="module" src="js/playbutton.js"></script>
 	</body>
 </html>
